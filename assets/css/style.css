@@ -4,15 +4,44 @@ header{
     background-size: 116%;
     background-repeat: no-repeat;
     background-position: 140px;
-    height: 100vh;
-    padding: 2em;
+    padding: 2em 0 5em 0;
+    border-radius: 0px 0px 0px 120px;
 }
 header menu .logo, header menu .authentificaiton, header menu .navigation{
     vertical-align: middle;
     position: relative;
     height: 60px;
 }
+header button{
+    cursor: pointer;
+    background: none;
+    color: white;
+    padding: 10px 26px;
+    border: 1px white solid;
+    border-radius: 100px;
+    transition-property: all;
+    transition-duration:.4s;
+}
+
+header button:first-child{
+    background-color: white;
+    color: black;
+    
+}
+header button:first-child:hover{
+    background-color: #ff7c86;
+    border-color: #ff7c86;
+    color:white;
+}
+
+header button:nth-child(2):hover{
+    background-color: #fff;
+    border-color: #fff;
+    color:#ff7c86;
+}
+
 header ul li{
+    position: relative;
     display:inline-block;
     vertical-align: top;
     margin-right: 30px;
@@ -22,9 +51,16 @@ header ul li{
 }
 header h1{
     text-align: center;
+    text-align: center;
+    font-size: 3em;
+    margin: 2em auto 0.3em auto;
+    color: white;
 } 
 header p{
     text-align: center;
+    color: white;
+    font-weight: 200;
+    margin-bottom: 4em;
 }
 header .CTA-actions {
     text-align: center;
@@ -42,9 +78,34 @@ header menu .authentificaiton li:last-child a{
     border: 1px white solid;
     background-color: white;
     color: black;
+    transition-property: all;
+    transition-duration: .4s;
 }
+
+header menu .authentificaiton li:last-child a:hover{
+    background-color: #ff7c86;
+    border-color: #ff7c86;
+    color:white;
+}
+header .sublist{
+    position: absolute;
+    background: #ffffff;
+    color: black;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
 header .sublist li{
     display: block;
+    top: 0;
+    transform: translateY(0);
+    font-size: 13px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+header .sublist li a{
+    color:black;
 }
 header .undisplay{
     display: none;
@@ -116,7 +177,7 @@ section.feature_3 {
 footer{
     background-color: #24252c;
     padding: 2.2em 0;
-    border-radius: 0 50px 0 0;
+    border-radius: 0 120px 0 0;
 }
 
 footer h4{
@@ -135,4 +196,8 @@ footer ul li{
 footer ul li a{
     color: #bfbfc7;
     text-decoration: none;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
 }
