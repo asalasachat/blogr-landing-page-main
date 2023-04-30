@@ -5,6 +5,49 @@ header{
     background-repeat: no-repeat;
     background-position: 140px;
     height: 100vh;
+    padding: 2em;
+}
+header menu .logo, header menu .authentificaiton, header menu .navigation{
+    vertical-align: middle;
+    position: relative;
+    height: 60px;
+}
+header ul li{
+    display:inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header h1{
+    text-align: center;
+} 
+header p{
+    text-align: center;
+}
+header .CTA-actions {
+    text-align: center;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+header menu .authentificaiton{
+    text-align: right;
+}
+header menu .authentificaiton li:last-child a{
+    padding: 10px 30px;
+    border-radius: 40px;
+    border: 1px white solid;
+    background-color: white;
+    color: black;
+}
+header .sublist li{
+    display: block;
+}
+header .undisplay{
+    display: none;
 }
 
 h3{
@@ -42,6 +85,7 @@ section.feature_2 {
     border-radius: 0px 200px 0 200px;
     background-size: 600px, 100%;
     padding: 4em 2em;
+    margin:6em 0;
 }
 
 section.feature_2 img{
