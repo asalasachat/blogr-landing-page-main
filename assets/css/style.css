@@ -1,0 +1,94 @@
+header{
+    background: url("../../images/bg-pattern-intro-desktop.svg");
+    background-color: #ff7066;
+    background-size: 116%;
+    background-repeat: no-repeat;
+    background-position: 140px;
+    height: 100vh;
+}
+
+h3{
+    font-size: 1.5em;
+    color:#444a74;
+    font-weight:500;
+    margin-bottom: 1.3em;
+}
+section{
+    margin: 2.5em 0;
+}
+section p{
+    margin-bottom: 4.5em;
+}
+section.feature_1 {
+    background: url("../../images/illustration-editor-desktop.svg");
+    background-position-x: calc(100% - -70px);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+section.feature_1 h2{
+    text-align: center;
+    color: #3a3e60;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+section.feature_2 {
+    position: relative;
+    background: url(../../images/bg-pattern-circles.svg) 0px 10px, linear-gradient(to right, #3a3b59, #3b3c5b, #3c3d5d, #3d3f5f, #3E4061);
+    background-repeat: no-repeat;
+    border-radius: 0px 200px 0 200px;
+    background-size: 600px, 100%;
+    padding: 4em 2em;
+}
+
+section.feature_2 img{
+vertical-align: middle;
+position: absolute;
+top: -90px;
+width: 40%;
+}
+
+section.feature_2 h2{
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+section.feature_2 p{
+    color: #bfbfc7;
+}
+section.feature_3 {
+    background: url("../../images/illustration-laptop-desktop.svg");
+    height: 100vh;
+    background-position-x: 0;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    padding: 28px;
+    background-position-y: center;
+}
+
+footer{
+    background-color: #24252c;
+    padding: 2.2em 0;
+    border-radius: 0 50px 0 0;
+}
+
+footer h4{
+    color: #fff;
+    margin-bottom: 15px;
+}
+footer ul{
+    list-style: none;
+    font-size: 14px;
+}
+footer ul li{
+    text-decoration: none;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+}
+footer ul li a{
+    color: #bfbfc7;
+    text-decoration: none;
+}
