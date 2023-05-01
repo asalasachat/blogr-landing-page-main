@@ -94,6 +94,8 @@ header .sublist{
     padding: 8px;
     margin-top: 10px;
     border-radius: 5px;
+    width: 100px;
+    box-shadow: 0px 2px 5px -2px black;
 }
 
 header .sublist li{
@@ -106,6 +108,9 @@ header .sublist li{
 }
 header .sublist li a{
     color:black;
+}
+header .sublist li a:hover{
+    font-weight: bold;
 }
 header .undisplay{
     display: none;
