@@ -8,7 +8,6 @@ header{
     border-radius: 0px 0px 0px 120px;
 }
 header menu .logo, header menu .authentificaiton, header menu .navigation{
-    vertical-align: middle;
     position: relative;
     height: 60px;
 }
@@ -33,6 +32,9 @@ header button:first-child:hover{
     border-color: #ff7c86;
     color:white;
 }
+.menu-mobile{
+    display:none;
+}
 
 header button:nth-child(2):hover{
     background-color: #fff;
@@ -44,7 +46,7 @@ header ul li{
     position: relative;
     display:inline-block;
     vertical-align: top;
-    margin-right: 30px;
+    margin-right: 25px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -86,6 +88,10 @@ header menu .authentificaiton li:last-child a:hover{
     background-color: #ff7c86;
     border-color: #ff7c86;
     color:white;
+}
+header .menu-icon{
+    float: right;
+    display: none;
 }
 header .sublist{
     position: absolute;
@@ -171,7 +177,6 @@ section.feature_2 p{
 }
 section.feature_3 {
     background: url("../../images/illustration-laptop-desktop.svg");
-    height: 100vh;
     background-position-x: 0;
     background-size: 40%;
     background-repeat: no-repeat;
@@ -206,3 +211,128 @@ footer ul li a{
 footer ul li a:hover{
     text-decoration: underline;
 }
+
+@media screen and (max-width:719px) {
+    footer{
+        text-align: center;
+    }
+
+    section.feature_3 {
+        height: auto;
+        background-position-x: center;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        padding: 28px;
+        background-position-y: top;
+        padding-top: 22em;
+        text-align: center;
+    }
+
+    section.feature_2 {
+        position: relative;
+        background: url(../../images/bg-pattern-circles.svg) 10px -195px, linear-gradient(to right, #3a3b59, #3b3c5b, #3c3d5d, #3d3f5f, #3E4061);
+        background-repeat: no-repeat;
+        border-radius: 0px 200px 0 200px;
+        background-size: 600px, 100%;
+        padding: 6em 2em;
+        margin: 6em 0;
+    }
+
+    section.feature_2 img {
+        vertical-align: middle;
+        position: absolute;
+        top: -115px;
+        width: 40%;
+        margin: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    section.feature_1 {
+        background: url(../../images/illustration-editor-desktop.svg);
+        background-position-x: center;
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position-y: top;
+        padding-top: 14em;
+        text-align: center;
+    }
+    header .menu-icon{
+        display: inline-block;
+    }
+    .menu-mobile{
+        display:block;
+    background-color: white;
+    position: absolute;
+    width: 96%;
+    top: 6em;
+    margin: 1.5% 2%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px -2px black;
+    }
+
+    .menu-mobile li.signup{
+    width: 60%;
+    margin: auto;
+    background: linear-gradient(88deg, #ff7066, #ff4a59);
+    border-radius: 100px;
+    }
+    .menu-mobile li.signup a{
+        color: white;
+    }
+
+    header ul li {
+        position: relative;
+        display: block;
+        vertical-align: top;
+        position: relative;
+        text-align: center;
+        margin:0;
+        margin-bottom: 10px;
+    }
+    header ul li a{
+        color:black;
+    }
+    header menu .logo, header menu .authentificaiton, header menu .navigation{
+        height:auto;
+    }
+    header .sublist{
+        position:relative;
+    }
+    .navigation, .authentificaiton{
+        display:none;
+    }
+    .mainmenu li{
+        width:100%;
+        text-align: center;
+    }
+    .navigation2{
+        padding: 30px;
+    }
+    .navigation2 ul{
+        list-style: none;
+    }
+    .navigation2 .undisplayMob{
+        display:none;
+    }
+    .navigation2 li a{
+        display:block;
+        width: 100%;
+        padding:10px;
+        text-decoration: none;
+        color:#6c709b;
+        font-weight: 500;
+    }
+    .navigation2 .devider {
+        border-bottom: 1px #f7f6f6 solid;
+        margin: 15px auto;
+        width: 70%;
+    }
+    .submenu{
+        background: #f1f1f1;
+    padding: 1em;
+    font-size: 13px;
+    }
+}
+
+

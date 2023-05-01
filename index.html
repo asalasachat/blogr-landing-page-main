@@ -17,64 +17,106 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <menu>
-        <div class="logo grid-d-2">
-          <a href=""><img src="images/logo.svg" alt=""></a>
-        </div>
-        <ul class="navigation grid-d-7">
-          <li class="dropdown-item">
-            <a href="" class="">Product <img src="images/icon-arrow-light.svg" alt=""></a>
-            <ul class="sublist undisplay">
+
+  <div class="menu-mobile">
+    <nav class="navigation2">
+      <ul class="mainmenu">
+        <li><a href="" class="submenu-item">Company <img src="./images/icon-arrow-dark.svg" alt=""></a>
+          <ul class="submenu undisplayMob">
+            <li><a href="">About</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+        </li>
+        <li ><a href="" class="submenu-item">Contact <img src="./images/icon-arrow-dark.svg" alt=""></a>
+          <ul class="submenu undisplayMob">
+            <li><a href="">Contact</a></li>
+            <li><a href="">Newsletter</a></li>
+            <li><a href="">LinkedIn</a></li>
+          </ul>
+        </li>
+        <li><a href="" class="submenu-item">Product <img src="./images/icon-arrow-dark.svg" alt=""></a>
+          <ul class="submenu undisplayMob">
               <li><a href="">Overview</a></li>
               <li><a href="">Pricing</a></li>
               <li><a href="">Marketplace</a></li>
               <li><a href="">Features</a></li>
               <li><a href="">Integrations</a></li>
-            </ul>
-          </li>
-          <li class="dropdown-item">
-            <a href="" class="">Company <img src="images/icon-arrow-light.svg" alt=""?></a>
-            <ul class="sublist undisplay">
-              <li><a href="">About</a></li>
-              <li><a href="">Team</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Careers</a></li>
-            </ul>
-          </li>
-          <li class="dropdown-item">
-            <a href="" class="">Connect <img src="images/icon-arrow-light.svg" alt=""/></a>
-            <ul class="sublist undisplay">
-              <li><a href="">Contact</a></li>
-              <li><a href="">Newsletter</a></li>
-              <li><a href="">LinkedIn</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="authentificaiton grid-d-3">
-          <li>
-            <a href="">Login</a>
-          </li>
-          <li>
-            <a href="">Sign Up</a>
-          </li>
-        </ul>
-      </menu>
-    </div>
-    <div class="container">  
-      <h1>A modern publishing platform</h1>
-      <p>Grow your audience and build your online brand</p>
-      <div class="CTA-actions">
-        <button>Start for Free</button> 
-        <button>Learn More</button>
+          </ul>
+        </li>
+        <li class="devider"></li>
+        <li>
+          <a href="">Login</a>
+        </li>
+        <li class="signup">
+          <a href="">Sign Up</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <header>
+    <div class="container">
+      
+      <menu>
+        <div class="logo grid-d-2 grid-tl-2  grid-t-2 grid-m-12">
+          <a href=""><img src="images/logo.svg" alt=""></a>
+          <a href="" class="menu-icon"><img src="images/icon-hamburger.svg" alt=""></a>
+        </div>
+        
+          <ul class="navigation grid-d-7 grid-tl-7 grid-t-6 grid-m-6">
+            <li class="dropdown-item">
+              <a href="" class="">Product <img src="images/icon-arrow-light.svg" alt=""></a>
+              <ul class="sublist undisplay">
+                <li><a href="">Overview</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Marketplace</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Integrations</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-item">
+              <a href="" class="">Company <img src="images/icon-arrow-light.svg" alt=""?></a>
+              <ul class="sublist undisplay">
+                <li><a href="">About</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Careers</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-item">
+              <a href="" class="">Connect <img src="images/icon-arrow-light.svg" alt=""/></a>
+              <ul class="sublist undisplay">
+                <li><a href="">Contact</a></li>
+                <li><a href="">Newsletter</a></li>
+                <li><a href="">LinkedIn</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="authentificaiton grid-d-3 grid-tl-3 grid-t-4">
+            <li>
+              <a href="">Login</a>
+            </li>
+            <li>
+              <a href="">Sign Up</a>
+            </li>
+          </ul>
+        </menu>
       </div>
-    </div>
+      <div class="container">  
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <div class="CTA-actions">
+          <button>Start for Free</button> 
+          <button>Learn More</button>
+        </div>
+      </div>
   </header>
   <section class="feature_1">
     <div class="container">
       <h2>Designed for the future</h2>
-      <div class="grid-d-6">
+      <div class="grid-d-6 grid-tl-6 grid-t-8">
         <h3>Introducing an extensible editor</h3>
         <p>
           Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
@@ -88,13 +130,13 @@
           by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.  
         </p>
       </div>
-      <div class="grid-d-6"></div>
+      <div class="grid-d-6 grid-tl-6 grid-t-6"></div>
     </div>
   </section>
   <section class="feature_2">
     <div class="container">
-      <div class="grid-d-6"><img src="images/illustration-phones.svg" alt=""></div>
-      <div class="grid-d-6">
+      <div class="grid-d-6 grid-t-6"><img src="images/illustration-phones.svg" alt=""></div>
+      <div class="grid-d-6 grid-t-6">
         <h2>State of the Art Infrastructure</h2>
         <p> 
           With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
@@ -105,8 +147,8 @@
   </section>
   <section class="feature_3">
     <div class="container">
-      <div class="grid-d-6"></div>
-      <div class="grid-d-6">
+      <div class="grid-d-6 grid-t-5"></div>
+      <div class="grid-d-6 grid-t-7">
         <h3>Free, open, simple</h3>
         <p> 
           Blogr is a free and open source application backed by a large community of helpful developers. It supports 
@@ -123,10 +165,10 @@
   </section>
   <footer>
     <div class="container">
-      <div class="grid-d-3">
+      <div class="grid-d-3 grid-tl-3 grid-t-3 grid-m-12">
         <img src="images/logo.svg" alt="">
       </div>
-      <div class="grid-d-3">
+      <div class="grid-d-3 grid-tl-3 grid-t-3 grid-m-12">
         <h4>Company</h4>
         <ul>
           <li><a href=""> About</a></li>
@@ -135,7 +177,7 @@
           <li><a href=""> Careers</a></li>
         </ul>
       </div>
-      <div class="grid-d-3">
+      <div class="grid-d-3 grid-tl-3 grid-t-3 grid-m-12">
         <h4>Product</h4>
         <ul>
           <li><a href=""> Overview</a></li>
@@ -145,7 +187,7 @@
           <li><a href=""> Integrations</a></li>
         </ul>  
       </div>
-      <div class="grid-d-3">
+      <div class="grid-d-3 grid-tl-3 grid-t-3 grid-m-12">
         <h4>Connect</h4>
         <ul>
           <li><a href=""> Contact</a></li>

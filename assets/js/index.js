@@ -27,3 +27,30 @@ menuItem.forEach(element => {
     element.querySelector("ul").addEventListener("mouseover",()=>hoverVar=true);
     element.querySelector("ul").addEventListener("mouseleave", submenuOutHandeler);
 });
+
+const menuItemMobile=document.querySelectorAll(".submenu-item");
+menuItemMobile.forEach(elem=>{
+    elem.addEventListener("click", function (event) {
+        event.stopPropagation();
+        event.preventDefault();
+        const activesub=document.querySelector(".menu-mobile ul.active");
+
+        const submenu=this.parentNode.querySelector("ul.submenu");
+        if(!submenu.classList.contains("active")){
+            console.log('sssssss')
+            submenu.classList.remove("undisplayMob");
+            submenu.classList.add("active");
+        }
+        else{
+            console.log("helll")
+            submenu.classList.remove("active");
+            submenu.classList.add("undisplayMob");
+        }
+        
+        if(activesub!=null){
+            activesub.classList.remove("active");
+            activesub.classList.add("undisplayMob");
+        }
+        
+      })
+});
