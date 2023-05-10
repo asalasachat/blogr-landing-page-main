@@ -19,7 +19,6 @@ menuItem.forEach(element => {
     element.addEventListener("mouseleave", function(){
         setTimeout(() => {
             if(!hoverVar){
-                console.log("Hello");
                 element.querySelector("ul").classList.add("undisplay");
             }
         }, 500);
@@ -36,21 +35,40 @@ menuItemMobile.forEach(elem=>{
         const activesub=document.querySelector(".menu-mobile ul.active");
 
         const submenu=this.parentNode.querySelector("ul.submenu");
+        var timeline1 = new TimelineMax();
+        
         if(!submenu.classList.contains("active")){
-            console.log('sssssss')
             submenu.classList.remove("undisplayMob");
             submenu.classList.add("active");
+            console.log(submenu.offsetHeight);
+            timeline1.fromTo(submenu, .4, {opacity: 0, height:0}, {opacity:1, height:submenu.offsetHeight});
         }
         else{
-            console.log("helll")
             submenu.classList.remove("active");
             submenu.classList.add("undisplayMob");
         }
-        
+
         if(activesub!=null){
             activesub.classList.remove("active");
             activesub.classList.add("undisplayMob");
         }
         
       })
+});
+
+const iconmenu=document.querySelector(".menu-icon");
+iconmenu.addEventListener("click", function(event){
+    event.preventDefault();
+    const menumob= document.querySelector(".menu-mobile")
+    if(menumob.classList.contains("active")){
+        menumob.style.display="none";
+        menumob.classList.remove("active");
+    }
+    else{
+        menumob.classList.add("active");
+        menumob.style.display="block";
+        var timeline1 = new TimelineMax();
+        timeline1.fromTo(menumob, .2, {opacity: 0}, {opacity:1});
+        
+    }
 });
