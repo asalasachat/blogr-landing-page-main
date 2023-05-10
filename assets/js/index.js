@@ -1,6 +1,6 @@
 const menuItem=document.querySelectorAll(".dropdown-item");
 let hoverVar=false;
-
+var timeline1 = new TimelineMax();
 const submenuInHandeler=function (event) {  
     event.preventDefault();
     listeElement=this.querySelector("ul");
@@ -35,12 +35,11 @@ menuItemMobile.forEach(elem=>{
         const activesub=document.querySelector(".menu-mobile ul.active");
 
         const submenu=this.parentNode.querySelector("ul.submenu");
-        var timeline1 = new TimelineMax();
+        
         
         if(!submenu.classList.contains("active")){
             submenu.classList.remove("undisplayMob");
             submenu.classList.add("active");
-            console.log(submenu.offsetHeight);
             timeline1.fromTo(submenu, .4, {opacity: 0, height:0}, {opacity:1, height:submenu.offsetHeight});
         }
         else{
@@ -61,13 +60,15 @@ iconmenu.addEventListener("click", function(event){
     event.preventDefault();
     const menumob= document.querySelector(".menu-mobile")
     if(menumob.classList.contains("active")){
-        menumob.style.display="none";
-        menumob.classList.remove("active");
+        timeline1.fromTo(menumob, .2, {opacity: 1}, {opacity:0}).then(function(){
+            menumob.style.display="none";
+            menumob.classList.remove("active");
+        })
     }
     else{
         menumob.classList.add("active");
         menumob.style.display="block";
-        var timeline1 = new TimelineMax();
+        
         timeline1.fromTo(menumob, .2, {opacity: 0}, {opacity:1});
         
     }
